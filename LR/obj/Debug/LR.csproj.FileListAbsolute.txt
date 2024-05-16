@@ -1,0 +1,7 @@
+C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\bin\Debug\LR.exe.config
+C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\bin\Debug\LR.exe
+C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\bin\Debug\LR.pdb
+C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\obj\Debug\LR.csproj.AssemblyReference.cache
+C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\obj\Debug\LR.csproj.CoreCompileInputs.cache
+C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\obj\Debug\LR.exe
+C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\obj\Debug\LR.pdb
