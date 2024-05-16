@@ -29,29 +29,24 @@ namespace MainSpace
             if (rightBorder < leftBorder) (leftBorder, rightBorder) = (rightBorder, leftBorder);
 
             int i = 0;
-            double xc = 0.0; // x_center
+            double xc = (rightBorder + leftBorder) / 2.0; // x_center
             for (; i <= maxIterations; ++i)
-            {   // Можно ли здесь убрать Модуль??
+            {
                 if (Math.Abs(rightBorder - leftBorder) / 2.0 < accuracy) break;
 
                 xc = (rightBorder + leftBorder) / 2.0;
-                double middleFuncPoint = func(xc);
 
-                if (func(xc - accuracy) < middleFuncPoint)
+                if (func(xc - accuracy) < func(xc + accuracy))
                 {
                     rightBorder = xc;
-                }
-                else if (func(xc + accuracy) < middleFuncPoint)
-                {
-                    leftBorder = xc;
+                    continue;
                 }
                 else
                 {
-                    leftBorder = xc - accuracy;
-                    rightBorder = xc + accuracy;
+                    leftBorder = xc;
                 }
             }
-            return (Math.Round(xc, 3), i);
+            return (xc, i * 2);
         }
 
         public static (double, int) GoldenRatio(
@@ -64,35 +59,36 @@ namespace MainSpace
             if (rightBorder < leftBorder) (leftBorder, rightBorder) = (rightBorder, leftBorder);
 
             double phi = (1 + Math.Sqrt(5)) / 2;
-            double phi2 = 2 - phi;
+            double psi = 1 / phi;
 
-            double x1 = leftBorder + phi2 * (rightBorder - leftBorder);
+            double x1 = rightBorder - psi * (rightBorder - leftBorder);
             double fx1 = func(x1);
 
-            double x2 = rightBorder - phi2 * (rightBorder - leftBorder);
+            double x2 = leftBorder + psi * (rightBorder - leftBorder);
             double fx2 = func(x2);
 
             int i = 0;
             for (; i < maxIterations; ++i)
             {
-                if (Math.Abs(rightBorder - leftBorder) / 2.0 <= accuracy) break;
+                if (rightBorder - leftBorder < 2.0 * accuracy) break;
 
-                if (fx1 < fx2)
+                if (fx1 > fx2)
+                {
+                    leftBorder = x1;
+                    x1 = x2;
+                    fx1 = fx2;
+                    x2 = leftBorder + psi * (rightBorder - leftBorder);
+                    fx2 = func(x2);
+                } else
                 {
                     rightBorder = x2;
                     x2 = x1;
                     fx2 = fx1;
-                    x1 = leftBorder + phi2 * (rightBorder - leftBorder);
+                    x1 = rightBorder - psi * (rightBorder - leftBorder);
                     fx1 = func(x1);
-                    continue;
                 }
-                leftBorder = x1;
-                x1 = x2;
-                fx1 = fx2;
-                x2 = rightBorder - phi2 * (rightBorder - leftBorder);
-                fx2 = func(x2);
             }
-            return ((leftBorder + rightBorder) / 2.0, i);
+            return ((leftBorder + rightBorder) / 2.0, i + 2);
         }
 
 

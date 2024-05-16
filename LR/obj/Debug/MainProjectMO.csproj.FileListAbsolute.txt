@@ -5,3 +5,13 @@ C:\Users\Святослав Иванович\Documents\Универ\6-ой Се�
 C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\obj\Debug\MainProjectMO.csproj.CoreCompileInputs.cache
 C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\obj\Debug\LR.exe
 C:\Users\Святослав Иванович\Documents\Универ\6-ой Семестр\Методы Оптимизации\ЛР\MetOpt\LR\obj\Debug\LR.pdb
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\bin\Debug\LR.exe.config
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\bin\Debug\LR.exe
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\bin\Debug\LR.pdb
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\bin\Debug\System.ValueTuple.dll
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\bin\Debug\System.ValueTuple.xml
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\obj\Debug\MainProjectMO.csprojAssemblyReference.cache
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\obj\Debug\MainProjectMO.csproj.CoreCompileInputs.cache
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\obj\Debug\MainProjectMO.csproj.CopyComplete
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\obj\Debug\LR.exe
+C:\Users\student\Downloads\MetOptLabs-main\MetOptLabs-main\LR\obj\Debug\LR.pdb
